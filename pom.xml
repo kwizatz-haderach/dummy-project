@@ -21,19 +21,6 @@
         </dependency>
         <!-- 		  /Spring Boot			-->
 
-        <!-- 		  FIPS Dependencies		-->
-        <dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bctls-fips</artifactId>
-            <version>${bouncycastle.fips.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bc-fips</artifactId>
-            <version>${bouncycastle.fips.version}</version>
-        </dependency>
-        <!-- 		  /FIPS Dependencies	-->
-
         <!--            Open Api            -->
         <dependency>
             <groupId>org.springdoc</groupId>
