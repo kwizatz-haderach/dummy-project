@@ -14,35 +14,36 @@
     </properties>
 
     <dependencies>
+        <!-- 		  Spring Boot			-->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>29.0-jre</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 		  /Spring Boot			-->
+
+        <!-- 		  FIPS Dependencies		-->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bctls-fips</artifactId>
+            <version>${bouncycastle.fips.version}</version>
         </dependency>
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.5</version>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bc-fips</artifactId>
+            <version>${bouncycastle.fips.version}</version>
+        </dependency>
+        <!-- 		  /FIPS Dependencies	-->
+
+        <!--            Open Api            -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.2</version>
         </dependency>
         <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-            <version>3.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.atteo.classindex</groupId>
-            <artifactId>classindex</artifactId>
-            <version>3.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.inject</groupId>
-            <artifactId>javax.inject</artifactId>
-            <version>1</version>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.6.1</version>
         </dependency>
         <dependency>
             <groupId>javax.validation</groupId>
@@ -50,25 +51,53 @@
             <version>2.0.1.Final</version>
         </dependency>
         <dependency>
-            <groupId>com.github.drapostolos</groupId>
-            <artifactId>type-parser</artifactId>
-            <version>0.6.0</version>
+            <groupId>org.openapitools</groupId>
+            <artifactId>jackson-databind-nullable</artifactId>
+            <version>0.2.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.4</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <!--            /Open Api           -->
+
+        <!--            Kubernetes          -->
+        <dependency>
+            <groupId>io.kubernetes</groupId>
+            <artifactId>client-java</artifactId>
+            <version>13.0.0</version>
+        </dependency>
+        <!--            /Kubernetes         -->
+
+        <!--            Google Guava        -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>30.1.1-jre</version>
+        </dependency>
+        <!--            /Google Guava       -->
+
+        <!--            Apache Commons      -->
         <dependency>
             <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.3.2</version>
+            <artifactId>commons-text</artifactId>
+            <version>1.9</version>
         </dependency>
+        <!--            /Apache commons     -->
+
+        <!-- 		  Spring Boot Test		-->
         <dependency>
-            <groupId>javax.jms</groupId>
-            <artifactId>javax.jms-api</artifactId>
-            <version>2.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>net.javacrumbs.json-unit</groupId>
-            <artifactId>json-unit</artifactId>
-            <version>2.35.0</version>
-        </dependency>
+        <!-- 		  /Spring Boot Test		-->
     </dependencies>
 
 </project>
